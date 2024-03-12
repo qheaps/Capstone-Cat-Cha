@@ -1,0 +1,537 @@
+/* 200 x 300 for cat cards */
+/* C33C54 rose red
+FBDCE2 mimi pink
+A882DD lavender
+49416d english violet */
+/* background color #3c384d
+border color #883997 */
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .rubik-logo {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+body {
+    background-color: #3c384d;
+}
+
+.user-header {
+    border-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #49416d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 2px solid #883997;
+}
+
+footer {
+    color:blue;
+}
+
+#login-section {
+    width: 800px;
+    height: 500px;
+    background-color: #49416d;
+    padding: 16px, 10px, 10px, 10px;
+    border: 2px solid #883997;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#login-form {
+    width: 80%;
+    height: 100%;
+    background-color: #49416d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#credentials {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#log-reg-holder {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[id="user-input"], input[type=password] {
+    width: 100%;
+    height: 15%;
+    margin: 10px, 10px;
+    display: inline-block;
+    border: 2px solid #883997;
+    box-sizing: border-box;
+    color: #FBDCE2;
+    background-color: #3c384d;
+    border-radius: 5px;
+    font-family: "Madimi One", monospace;
+}
+
+input[id=user-input]:focus, input[type=password]:focus {
+    background-color: #883997;
+    outline: none;
+    border-color: #C33C54;
+  }
+
+#logo-holder {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login-btn {
+    width: 25%;
+    height: 80%;
+    color: #FBDCE2;
+    border: 2px solid #883997;
+    border-radius: 45px;
+    background-color: #3c384d;
+    text-transform: uppercase;
+    font-family: "Madimi One", monospace;
+    transition: .3s;
+    background-size: 200%;
+}
+
+.login-btn:hover {
+    background-color: #883997;
+    border-color: #C33C54;
+    /* color: #C33C54; */
+    text-decoration: none;
+}
+
+#login-logo {
+    font-size: 80px;
+    text-align: center;
+    font-family: "Rubik";
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #FBDCE2;
+    text-shadow: -2px 2px #ef3550,
+                 -4px 4px #f48fb1,
+                 -6px 6px #7e57c2,
+                 -8px 8px #2196f3,
+                 -10px 10px #26c6da,
+                 -12px 12px #43a047,
+                 -14px 14px #eeff41,
+                 -16px 16px #f9a825,
+                 -18px 18px #ff5722;
+}
+
+.login-text {
+    margin-top: 5px;
+    margin-bottom: 4px;
+    color: #FBDCE2;
+    font-family: "Madimi One", monospace;
+}       
+ 
+
+
+/* !!!!!!!!!!!!!
+END LOGIN CSS
+!!!!!!!!!!!!! */
+
+
+
+.logo-container {
+    height: 100%;
+    width: 20%;
+    background-color: #49416d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.site-logo {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Rubik";
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #FBDCE2;
+    text-shadow: -1px 1px #ef3550,
+                 -2px 2px #f48fb1,
+                 -3px 3px #7e57c2,
+                 -4px 4px #2196f3,
+                 -5px 5px #26c6da,
+                 -6px 6px #43a047,
+                 -7px 7px #eeff41,
+                 -8px 8px #f9a825,
+                 -9px 9px #ff5722;
+}
+
+#page-content {
+    /* problem */
+    height: 100vh;
+    width: 100%;
+    background-color: #f48fb1;
+}
+
+.user-header {
+    height: 80px;
+    width: 80px;
+    /* background-color: #7e57c2; */
+    /* padding-left: 100px; */
+}
+
+/* rolling-btn p on hover */
+#rolling-section {
+    height: 20%;
+    width: 100%;
+    background-color: #3c384d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rolling-btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid #883997;
+    font-family: "Rubik";
+    background: #3c384d;
+    box-shadow: 1px 1px 20px #883997;
+    transition: .3s;
+}
+
+#rolling-btn:hover {
+    border-color: #C33C54;
+    box-shadow: 1px 1px 20px #C33C54
+
+}
+
+#rolling-text {
+    background: linear-gradient(90deg, #ef3550, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    background-size: 80%;
+    color: #FBDCE2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: auto;
+    transition: .3s;
+}
+
+#rolling-text:hover {
+    color: transparent;
+}
+
+/* dropdown zone */
+
+.drop-btn {
+    background-color: #3c384d;
+    color: #FBDCE2;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid #883997;
+    height: 100%;
+    width: 100%;
+    font-family: "Madimi One", monospace;
+    /* outline: 2px blue solid; */
+    /* display: flex; */
+    
+}
+
+.drop-down {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    /* background-color: #3e8e41; */
+}
+
+.drop-div {
+    display: none;
+    position: absolute;
+    background-color: #3c384d;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    font-family: "Madimi One", monospace;
+}
+
+.drop-div a {
+    color: #FBDCE2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 2px solid #883997;
+}
+
+.drop-div a:hover {background-color: #883997; border-color: #C33C54;}
+
+.drop-down:hover .drop-div {display: block;}
+
+.drop-down:hover .drop-btn {background-color: #883997; border-color: #C33C54;}
+
+/* end dropdown zone */
+
+#cat-cards {
+    height: 80%;
+    width: 100%;
+    background-color: #3c384d;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Madimi One", monospace;
+}
+
+.cat-card3 {
+    height: 300px;
+    width: 200px;
+    background-color: #3c384d;
+    border: 5px solid #26c6da;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px #26c6da;
+    transition: .3s;
+}
+.cat-card3:hover {
+    height: 350px;
+    width: 225px;
+}
+
+.cat-text3 {
+    color: #26c6da;
+}
+
+.cat-rarity3 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #26c6da;
+}
+
+.cat-card4 {
+    height: 300px;
+    width: 200px;
+    background-color: #3c384d;
+    border: 5px solid #883997;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px #883997;
+    transition: .3s;
+}
+.cat-card4:hover {
+    border-color: #883997;
+    height: 350px;
+    width: 225px;
+}
+
+.cat-rarity4 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #883997;
+}
+
+.cat-text4 {
+    color: #883997;
+}
+
+
+.cat-card5 {
+    height: 300px;
+    width: 200px;
+    background-color: #3c384d;
+    border: 5px solid #e9c603;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px #e9c603;
+    transition: .3s;
+}
+.cat-card5:hover {
+    height: 350px;
+    width: 225px;
+}
+
+.cat-rarity5 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #e9c603;
+}
+
+.cat-text5 {
+    color: #e9c603;
+}
+
+
+.card-header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-image-cont {
+    width: 100%;
+    height: 80%;
+}
+
+.cat-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* cat grid assignment */
+
+#cat-1 {
+    margin: auto;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#cat-2 {
+    margin: auto;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#cat-3 {
+    margin: auto;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#cat-4 {
+    margin: auto;
+    grid-row: 1;
+    grid-column: 4;
+}
+
+#cat-5 {
+    margin: auto;
+    grid-row: 1;
+    grid-column: 5;
+}
+
+#cat-6 {
+    margin: auto;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#cat-7 {
+    margin: auto;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#cat-8 {
+    margin: auto;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#cat-9 {
+    margin: auto;
+    grid-row: 2;
+    grid-column: 4;
+}
+
+#cat-10 {
+    margin: auto;
+    grid-row: 2;
+    grid-column: 5;
+}
+
+/* collection section  */
+
+#cat-collection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    /* background-color: #43a047; */
+}
+
+#sorting-section {
+    width: 15%;
+    height: 100vh;
+    /* background-color: #26c6da; */
+    /* border-right: 2px solid red; */
+}
+#card-section {
+    background-color: #3c384d;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Madimi One", monospace;
+}
+
+#bad-practice {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sort-btn {
+    width: 100%;
+    height: 50px;
+    background-color: #3c384d;
+    border: 2px solid #883997;
+    font-family: "Madimi One", monospace;
+    color: #FBDCE2;
+}
+
+.sort-btn:hover {
+    background-color: #883997;
+    border-color: #C33C54;
+}

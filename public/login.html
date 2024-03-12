@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat-Cha Login</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="login-section">
+        <form id="login-form">
+            <p style="color: red;">DO NOT put in a password that you actually use elsewhere.</p>
+            <div id="logo-holder">
+                <h1 id="login-logo">Cat-Cha</h1>
+            </div>
+            <div id="credentials">
+                <h1 class="login-text">Username</h1>
+                <input id="user-input" type="text" required placeholder="username">
+                <h1 class="login-text">Password</h1>
+                <input id="pass-input" type="password" required placeholder="password">
+            </div>
+            <div id="log-reg-holder">
+                <button class="login-btn" id="register-btn">Register</button>
+                <button class="login-btn" id="login-btn">Login</button>
+            </div>
+        </form>
+    </section>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
