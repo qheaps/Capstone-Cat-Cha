@@ -18,7 +18,7 @@ const seed = () => {
         ('Uni', 'https://media1.tenor.com/m/txyvkWK8pXkAAAAd/uni-cat-cat.gif', 5),
         ('Mewing Cat', 'https://media1.tenor.com/m/rH9J08_cfjEAAAAd/giga-gigacat.gif', 4),
         ('Bingus', 'https://media1.tenor.com/m/n-3Z3MGgz2UAAAAd/bingus-blink.gif', 5),
-        ('Silver Paw', 'https://i.redd.it/s8wevqe195631.png', 5),
+        ('Silver Paw', 'https://media1.tenor.com/m/bIT-uBndWhEAAAAC/jonny-silverpaw-cyberpunk.gif', 5),
         ('Huh', 'https://media1.tenor.com/m/vmSP8owuOYYAAAAd/huh-cat-huh-m4rtin.gif', 5),
         ('Distraught Cat', 'https://i.kym-cdn.com/photos/images/original/001/349/862/8a4.jpg', 4),
         ('Distraught Kitten', 'https://media.tenor.com/-WxqpxyUTD4AAAAM/daladada-cat.gif', 3),
@@ -85,3 +85,9 @@ const seed = () => {
     module.exports = seed
     
 // Cat Template ('name', 'img', 0)
+
+// CREATE TABLE users (
+//     user_id SERIAL PRIMARY KEY,
+//     username VARCHAR(50),
+//     password TEXT
+// );
