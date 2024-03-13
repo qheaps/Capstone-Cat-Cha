@@ -23,7 +23,8 @@ CONNECTION_STRING=postgres://postgres:%YOURPASSWORDHERE%@localhost:%YOURPORTHERE
 
 # Features 
 Account Registration and Logging In: Cat-Cha requires the user to create an account to keep track of the user's cats. The user can enter a unique username and password, which can then be used to login at a later time to continue collecting cats. Users can also logout of their account.
-
+![Cat Collection](./planning/login.png "This is some image...")
 Cat Rolling: Users can roll for cats each time the roll button is pressed, which generates 10 cats of varying rarities, from 3 stars to 5 stars. The rolled cats have unique styling based upon their rarity, and upon being rolled are then associated to the user's account as being owned by that user.
-
+![Cat Collection](./planning/catrolling.png "This is some image...")
 Cat Collection: Here users can view and sort the database of cats, and see what cats they have collected.
+![Cat Collection](./planning/catcollection.png "This is some image...")
