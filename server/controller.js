@@ -37,6 +37,7 @@ module.exports = {
     assignCats: async (req, res) => {
         const { curUser, star3, star4, star5 } = req.body
         let passedCats = []
+        console.log(req.body)
 
         while (passedCats.length < 10) {
             for (let i = 0; i < star3; i++) {
@@ -48,13 +49,13 @@ module.exports = {
                              sequelize.query(`
                              SELECT * FROM user_cats WHERE cat_id = ${dbRes[0][0].cat_id} AND user_id = ${curUser}
                              `).then(dbRes2 => {
-                                 if (!dbRes2[0].length > 0) {
+                                 if (!dbRes2[0].length > 0 && passedCats.length < 10) {
                                      sequelize.query(`
                                       INSERT INTO user_cats (user_id, cat_id)
                                       VALUES (${curUser}, ${dbRes[0][0].cat_id});
                                       `)
                                       passedCats.push(dbRes[0][0])
-                                 } else {
+                                 } else if(passedCats.length < 10) {
                                     passedCats.push(dbRes[0][0])
                                  }
                              })
@@ -70,13 +71,13 @@ module.exports = {
                          sequelize.query(`
                          SELECT * FROM user_cats WHERE cat_id = ${dbRes[0][0].cat_id} AND user_id = ${curUser}
                          `).then(dbRes2 => {
-                             if (!dbRes2[0].length > 0) {
+                             if (!dbRes2[0].length > 0 && passedCats.length < 10) {
                                  sequelize.query(`
                                   INSERT INTO user_cats (user_id, cat_id)
                                   VALUES (${curUser}, ${dbRes[0][0].cat_id});
                                   `)
                                   passedCats.push(dbRes[0][0])
-                             } else {
+                             } else if(passedCats.length < 10) {
                                 passedCats.push(dbRes[0][0])
                              }
                          })
@@ -92,21 +93,21 @@ module.exports = {
                          sequelize.query(`
                          SELECT * FROM user_cats WHERE cat_id = ${dbRes[0][0].cat_id} AND user_id = ${curUser}
                          `).then(dbRes2 => {
-                             if (!dbRes2[0].length > 0) {
+                             if (!dbRes2[0].length > 0 && passedCats.length < 10) {
                                  sequelize.query(`
                                   INSERT INTO user_cats (user_id, cat_id)
                                   VALUES (${curUser}, ${dbRes[0][0].cat_id});
                                   `)
                                   passedCats.push(dbRes[0][0])
-                             } else {
+                             } else if(passedCats.length < 10) {
                                 passedCats.push(dbRes[0][0])
                              }
                             })
                         })
             }
         }
+        console.log(passedCats.length)
         await res.status(200).send(passedCats)
-        console.log(passedCats)
     },
     displayAllCats: (req, res) => {
         sequelize.query(`
@@ -140,7 +141,7 @@ module.exports = {
                     passedCats.push(dbRes2[0][0])
                 })
             }
-            console.log(passedCats)
+            // console.log(passedCats)
             res.status(200).send(passedCats)
     },
     display5Stars: (req, res) => {
